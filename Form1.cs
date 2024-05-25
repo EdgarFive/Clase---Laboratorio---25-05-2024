@@ -47,5 +47,10 @@ namespace Clase___Laboratorio___25_05_2024
         {
 
         }
+
+        private void label_generacion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

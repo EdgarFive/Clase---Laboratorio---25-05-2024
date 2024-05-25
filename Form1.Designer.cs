@@ -34,6 +34,8 @@
             this.label_ID = new System.Windows.Forms.Label();
             this.label_nombre_consola = new System.Windows.Forms.Label();
             this.label_compania = new System.Windows.Forms.Label();
+            this.label_anio_lanzamiento = new System.Windows.Forms.Label();
+            this.label_generacion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Mostrar_datos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +54,7 @@
             this.dataGridView_Mostrar_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Mostrar_datos.Location = new System.Drawing.Point(21, 231);
             this.dataGridView_Mostrar_datos.Name = "dataGridView_Mostrar_datos";
-            this.dataGridView_Mostrar_datos.Size = new System.Drawing.Size(566, 65);
+            this.dataGridView_Mostrar_datos.Size = new System.Drawing.Size(566, 90);
             this.dataGridView_Mostrar_datos.TabIndex = 1;
             this.dataGridView_Mostrar_datos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -60,7 +62,7 @@
             // 
             this.button_cargar_datos.Location = new System.Drawing.Point(624, 231);
             this.button_cargar_datos.Name = "button_cargar_datos";
-            this.button_cargar_datos.Size = new System.Drawing.Size(154, 65);
+            this.button_cargar_datos.Size = new System.Drawing.Size(154, 90);
             this.button_cargar_datos.TabIndex = 2;
             this.button_cargar_datos.Text = "Cargar";
             this.button_cargar_datos.UseVisualStyleBackColor = true;
@@ -94,11 +96,32 @@
             this.label_compania.Text = "Compañia:";
             this.label_compania.Click += new System.EventHandler(this.label_compania_Click);
             // 
+            // label_anio_lanzamiento
+            // 
+            this.label_anio_lanzamiento.AutoSize = true;
+            this.label_anio_lanzamiento.Location = new System.Drawing.Point(21, 133);
+            this.label_anio_lanzamiento.Name = "label_anio_lanzamiento";
+            this.label_anio_lanzamiento.Size = new System.Drawing.Size(103, 13);
+            this.label_anio_lanzamiento.TabIndex = 6;
+            this.label_anio_lanzamiento.Text = "Año de lanzamiento:";
+            // 
+            // label_generacion
+            // 
+            this.label_generacion.AutoSize = true;
+            this.label_generacion.Location = new System.Drawing.Point(21, 156);
+            this.label_generacion.Name = "label_generacion";
+            this.label_generacion.Size = new System.Drawing.Size(65, 13);
+            this.label_generacion.TabIndex = 7;
+            this.label_generacion.Text = "Generación:";
+            this.label_generacion.Click += new System.EventHandler(this.label_generacion_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_generacion);
+            this.Controls.Add(this.label_anio_lanzamiento);
             this.Controls.Add(this.label_compania);
             this.Controls.Add(this.label_nombre_consola);
             this.Controls.Add(this.label_ID);
@@ -122,6 +145,8 @@
         private System.Windows.Forms.Label label_ID;
         private System.Windows.Forms.Label label_nombre_consola;
         private System.Windows.Forms.Label label_compania;
+        private System.Windows.Forms.Label label_anio_lanzamiento;
+        private System.Windows.Forms.Label label_generacion;
     }
 }
 
